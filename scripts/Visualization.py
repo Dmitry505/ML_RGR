@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv(r'C:\Osnova\Programming\Python\ML\test\ML_RGR\data\classification.csv')
+df = pd.read_csv(r'data/classification.csv')
 
 st.title("Визуализация")
 

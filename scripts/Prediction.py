@@ -25,12 +25,12 @@ data = pd.DataFrame({'est_diameter_min': [est_diameter_min],
                     'miss_distance': [miss_distance],
                     'absolute_magnitude': [absolute_magnitude],})
 
-knn = pickle.load(open(r'C:\Osnova\Programming\Python\ML\test\ML_RGR\models\Knn.pickle', 'rb'))
-kmeans_model = pickle.load(open(r'C:\Osnova\Programming\Python\ML\test\ML_RGR\models\Kmeans.pickle', 'rb'))
-bagging_model = pickle.load(open(r'C:\Osnova\Programming\Python\ML\test\ML_RGR\models\Bagging.pickle', 'rb'))
-gradient_model = pickle.load(open(r'C:\Osnova\Programming\Python\ML\test\ML_RGR\models\Gradient.pickle', 'rb'))
-stacking_model = pickle.load(open(r'C:\Osnova\Programming\Python\ML\test\ML_RGR\models\Stacking.pickle', 'rb'))
-nn_model = load_model(r'C:\Osnova\Programming\Python\ML\test\ML_RGR\models\Neural.h5')
+knn = pickle.load(open(r'models/Knn.pickle', 'rb'))
+kmeans_model = pickle.load(open(r'models/Kmeans.pickle', 'rb'))
+bagging_model = pickle.load(open(r'models/Bagging.pickle', 'rb'))
+gradient_model = pickle.load(open(r'models/Gradient.pickle', 'rb'))
+stacking_model = pickle.load(open(r'models/Stacking.pickle', 'rb'))
+nn_model = load_model(r'models/Neural.h5')
 
 button_clicked = st.button("Предсказать")
 
